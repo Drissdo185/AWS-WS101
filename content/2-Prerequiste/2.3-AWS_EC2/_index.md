@@ -9,24 +9,24 @@ Step 1: Access the AWS Management Console
 -----------------------------------------
 [Access the AWS Management Console](https://console.aws.amazon.com/)
 
-![Management Console](/images/2.prerequisite/console.png)
+![Management Console](../../images/2.prerequisite/console.png)
 
 Step 2: Create a EC2 Instance
 -----------------------------
 1. In the AWS Management Console, click on the Services menu and select EC2.
-![Select EC2](/images/2.prerequisite/image14.png)
+![Select EC2](../../images/2.prerequisite/image14.png)
 
 Step 3: Launch Instance
 -----------------------
 Click on the Launch Instance button. In this step, you can set the configuration based on your requirement and I choose ubuntu as the operating system.
 
-![Launch Instance](/images/2.prerequisite/image15.png)
+![Launch Instance](../../images/2.prerequisite/image15.png)
 
 Step 4: Set security group
 --------------------------
 After launching the instance, you need to set the security group. Click on the Security Group and add the inbound rule for the instance.
 
-![Security Group](/images/2.prerequisite/image16.png)
+![Security Group](../../images/2.prerequisite/image16.png)
 
 Select the security group and click on the Inbound tab. Click on the Edit button and add the rule for the instance.
 Create port 8080 for HTTP with source 0.0.0.0.

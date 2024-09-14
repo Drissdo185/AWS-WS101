@@ -9,16 +9,16 @@ Step 1: Access the AWS Management Console
 -----------------------------------------
 [Access the AWS Management Console](https://console.aws.amazon.com/)
 
-![Management Console](/images/2.prerequisite/console.png)
+![Management Console](../../images/2.prerequisite/console.png)
 
 Step 2: Create a S3 Bucket
-![Create S3 Bucket](/images/2.prerequisite/image11.png)
+![Create S3 Bucket](../../images/2.prerequisite/image11.png)
 
 Step 3: Setting configuration for the S3 Bucket
 -------------------------------------------------
 In this project, I choose the default setting for the S3 bucket. You can choose any setting as per your requirement. But you should notice this setting to access the bucket from your local machine.
 
-![Setting Configuration](/images/2.prerequisite/image12.png)
+![Setting Configuration](../../images/2.prerequisite/image12.png)
 
 Unselect the Block all public access and acknowledge that the bucket will be public.
 
@@ -35,6 +35,6 @@ Step 4: Create IAM
 
 After creating the user, you will get the Access key and Secret key. You should note this key because you will use this key to access the S3 bucket from your local machine.
 
-![Access Key](/images/2.prerequisite/image13.png)
+![Access Key](../../images/2.prerequisite/image13.png)
 
 This is the end of the AWS S3 setup. Now, you can access the S3 bucket from your local machine.
