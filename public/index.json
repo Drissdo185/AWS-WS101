@@ -1,62 +1,62 @@
 [
 {
-	"uri": "//localhost:1313/",
+	"uri": "/",
 	"title": "AWS Workshop 101",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/1-introduce/",
+	"uri": "/1-introduce/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
 	"content": "Overview The workshop is designed to provide a hands-on experience with AWS services and how they can be integrated into a Java Spring Boot application. The workshop will cover the following topics:\nDeveloping API to import data from a Excel file to PostgreSQL database hosted on AWS RDS and Upload and Save Image to AWS S3. Simple deployment of Spring Boot application with Docker on EC2. Diagram The following diagram shows the architecture of the application:\n"
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.1-aws_rds/",
+	"uri": "/2-prerequiste/2.1-aws_rds/",
 	"title": "Preparing AWS RDS",
 	"tags": [],
 	"description": "",
 	"content": "Step 1: Access the AWS Management Console Access the AWS Management Console\nStep 2: Create a DB Instance In the AWS Management Console, click on the Services menu and select RDS. Click on the Create database button. Step 3: Setting configuration for the DB instance In this project, I choose PostgreSQL as the database engine. You can choose any database engine as per your requirement. Every setting depends on your requirement. However, you should note the following this point:\nYou should follow this setting, because when you choose Yes for the Public accessibility, you can access the database from your local machine.\n#Step 4: Security Setting\nAfter create successful DB instance, access the Security Group and add the inbound rule for the database. Select the security group and click on the Inbound tab. Click on the Edit button and add the rule for the database. Add the rule for the database and click on the Save button. After adding the rule, you can access the database from your local machine with endpoint and port number. This is the end of the AWS RDS setup. Now, you can access the database from your local machine.\n"
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/",
+	"uri": "/2-prerequiste/",
 	"title": "Preparation ",
 	"tags": [],
 	"description": "",
 	"content": "Content This section will guide you through the preparation of the environment for the workshop.\nSetting up AWS RDS Setting up AWS S3 Setting up AWS EC2 "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.3-aws_ec2/",
+	"uri": "/2-prerequiste/2.3-aws_ec2/",
 	"title": "Setting up AWS EC2",
 	"tags": [],
 	"description": "",
 	"content": "Step 1: Access the AWS Management Console Access the AWS Management Console\nStep 2: Create a EC2 Instance In the AWS Management Console, click on the Services menu and select EC2. Step 3: Launch Instance Click on the Launch Instance button. In this step, you can set the configuration based on your requirement and I choose ubuntu as the operating system.\nStep 4: Set security group After launching the instance, you need to set the security group. Click on the Security Group and add the inbound rule for the instance.\nSelect the security group and click on the Inbound tab. Click on the Edit button and add the rule for the instance. Create port 8080 for HTTP with source 0.0.0.0.\nAfter adding the rule, you can access the instance from your local machine with the public IP address.\n"
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.2-aws_s3/",
+	"uri": "/2-prerequiste/2.2-aws_s3/",
 	"title": "Setting up AWS S3",
 	"tags": [],
 	"description": "",
 	"content": "Step 1: Access the AWS Management Console Access the AWS Management Console\nStep 2: Create a S3 Bucket Step 3: Setting configuration for the S3 Bucket In this project, I choose the default setting for the S3 bucket. You can choose any setting as per your requirement. But you should notice this setting to access the bucket from your local machine.\nUnselect the Block all public access and acknowledge that the bucket will be public.\nAfter creating the bucket, we should create IAM user and assign the policy to access the bucket.\nStep 4: Create IAM In the AWS Management Console, click on the Services menu and select IAM. Click on the Users menu and click on the Add user button. Enter the user name and select the Programmatic access. Click on the Next: Permissions button. Click on the Attach existing policies directly button. Search for the AmazonS3FullAccess policy and select the checkbox. After creating the user, you will get the Access key and Secret key. You should note this key because you will use this key to access the S3 bucket from your local machine.\nThis is the end of the AWS S3 setup. Now, you can access the S3 bucket from your local machine.\n"
 },
 {
-	"uri": "//localhost:1313/3-deploy/",
+	"uri": "/3-deploy/",
 	"title": "Simple Web Application Deployment",
 	"tags": [],
 	"description": "",
 	"content": "In this section, we will deploy a simple web application on AWS. We will use the following services:\nStep 1: Connect to the EC2 instance using SSH Open the terminal and connect to the EC2 instance using the following command:\nssh -i \u0026#34;your-key.pem\u0026#34; ubuntu@your-public-ip Step 2: Install Docker Run the following command to install Docker on the EC2 instance:\nsudo apt-get update sudo apt-get install docker.io Step 3: Pull the Docker image At the step, I have already pushed the Docker image to the Docker Hub. You can pull the image using the following command:\ndocker pull datdt185/appjava Link to the Docker image: datdt185/appjava\nStep 4: Run the Docker container After pulling the Docker image, you can run the container using the following command:\ndocker run -d -p 8080:8080 datdt185/appjava Currently, the application is running on the EC2 instance. You can access the application using the public IP address and port 8080. You can use features of the application such as:\nImport data from a file excel to PostgreSQL: http://your-public-ip:8080/products/upload-customers-data? Result: Upload Image to S3: http://your-public-ip:8080/products/upload-image Result: Conclusion In this section, we have deployed a simple web application on AWS. We have used Docker to run the application on the EC2 instance. You can access the application using the public IP address and port 8080. The application provides features such as importing data from a file excel to PostgreSQL and uploading an image to S3. In the next workshop, we will optimize source code and update more about security such as VPN, public and private subnet, and build CI/CD pipeline.\n"
 },
 {
-	"uri": "//localhost:1313/categories/",
+	"uri": "/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/tags/",
+	"uri": "/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
