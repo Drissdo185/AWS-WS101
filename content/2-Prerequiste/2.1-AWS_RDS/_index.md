@@ -10,7 +10,7 @@ Step 1: Access the AWS Management Console
 -----------------------------------------
 [Access the AWS Management Console](https://console.aws.amazon.com/)
 
-![Management Console](/images/2.prerequisite/console.png)
+![Management Console](../images/2.prerequisite/console.png)
 
 Step 2: Create a DB Instance
 ----------------------------
